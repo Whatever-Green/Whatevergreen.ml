@@ -1,36 +1,80 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <style>
-    #title {margin-bottom:-20px; margin-left:30px;}
-    #friend {margin-bottom: -20px;}
-    a:link {color:black;}
-    a:visited {color:black;}
-    #about {margin-left:50px;
-        margin-top:20;
-    }
-    </style>
-</head>
-<body bgcolor="black">
-<div id="title"> <a href="https://jackstauber.com/"><img src="about_files/gTB3uIf.gif" width="200" height="100"></a>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!DOCTYPE html>
+<html lang="en">
 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/93866eaaa9.js" crossorigin="anonymous"></script>
+		<title>Whatever Green</title>
+	</head>
 
+	<body class="light-mode">
 
+		<nav class="menu">
+			<div class="nav-left">
+				<ul>
+					<li><a href="index.html"><img class="logo" src="favicon.png" alt=""><span class="sitename">Whatever Green</span></a></li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<ul>
+					<li style="padding: 9px"><a id="darkmodetoggle" class="fas fa-moon" onclick="switchTheme()"></a></li>
+					<li><a href="mailto:wolfgangschannel@mailbox.org">Contact</a></li>
+					<li><a href="https://github.com/Whatever-Green">Github</a></li>
+				<!--	<li><a href="https://twitter.com/notthebeeee">twitter</a></li> -->
+					<li><a href="https://www.youtube.com/channel/UCmtR9W3UNkRGFcyjw23JkZQ">Youtube Channel</a></li>
+				</ul>
+			</div>
+		</nav>
 
+		<article>
+<p>Bonjour!</p>
 
-<div id="menu" align="center"><a href="https://jackstauber.com/music"><img src="about_files/shzIn64.gif" width="100" height="50"></a>
+<p</p>
 
-<a href="https://jackstauber.com/video"><img src="about_files/c2XnR0w.gif" width="100" height="50">
+<p>Welcome to the most basic of websites!</p>
+<p>I am a idiot by trade, I live and work in the United Kingdom of Great Britain and Northern Ireland but I originate from India <small>So Im Not White There Is No Problem Being White Im Just Saying Im Not. God I'm getting Cancelled </small> I do 3D and 2D animation here is some of my <a href="work.html">"work"</a> if your so intrested. <p>
 
-   </a><a href="https://jackstauber.com/store"><img src="about_files/zcwdMwh.gif" width="100" height="50"></a>
-   
-    <a href="https://jackstauber.com/about"><img src="about_files/EF7nkE6.gif" width="100" height="50">
-</a></div><a href="https://jackstauber.com/about">
+</p> So how are you doing? I'm doing ok I think that life is stupid. Im think im depressed I think I need help <p>What is love? <p>Parallelogram</p>
+<p>any way here is some <a href="https://youtube.com/playlist?list=PLMxslmGT4Cq7Zrdky3tUNvNH1SGXLD894">"music"</a> I listen too many call it dog $h!T but you know what is dog $h!t dog $h!t</p>
+<footer>
+	<p>Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></br>
+	Created with a version of <a href="https://www.romanzolotarev.com/ssg.html">ssg</a> by Roman Zolotarev</p>
+</footer>
+<script>
+// Get the theme toggle input
+const currentTheme = localStorage.getItem("theme");// If the current local storage item can be found
 
-<div id="about" align="center"><img src="about_files/wFAJW56.gif" width="100" height="40">
-    
-</div>
+// Function that will switch the theme based on the if the theme toggle is checked or not
+function switchTheme() {
+  if (document.documentElement.getAttribute("data-theme") === "dark") {
+    document.documentElement.setAttribute("data-theme", "light");
+    // Set the user's theme preference to dark
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    // Set the user's theme preference to light
+    localStorage.setItem("theme", "dark");
+  }
+}
 
-    
-</a></body></html>
+// Get the current theme from local storage
+if (currentTheme) {
+        // Set the body data-theme attribute to match the local storage item
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        if (currentTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+        }
+}
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        console.log('user prefers dark scheme, going dark');
+        document.documentElement.setAttribute("data-theme", "dark");
+        }
+</script>
+
+        </body>
+</html>
