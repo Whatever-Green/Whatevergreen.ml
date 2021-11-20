@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-	--bg: #fefefe;
+	--bg: #ffe570;
 	--fg: #444;
 	--link: #0645ad;
 	--link_v: #0b0080;
@@ -69,6 +69,7 @@ a:active {
 
 p {
 	margin: 1em 0;
+	font-weight: bold;
 }
 
 img {
@@ -94,6 +95,7 @@ h6 {
 
 h1 {
 	font-size: 1.5em;
+	font-weight: bold;
 }
 
 h2 {
